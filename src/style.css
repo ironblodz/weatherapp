@@ -1,0 +1,156 @@
+html{
+  font-size: 62.5%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color:white;
+  font-size: 1.6rem;
+}
+
+#app{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-center: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#app header h1{
+  font-size: 4.8rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+#app header p{
+  font-size: 2.3rem;
+}
+
+#app .search-container {
+  position: relative;
+  width: 100%;
+  max-width: 817px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#app .search-container svg {
+  position: absolute;
+  transform: translateY(-10%);
+  left: 10px;
+  color: gray;
+}
+
+#app .search-container input{
+  width: 100%;
+  padding: 10px 40px;
+  color: purple;
+  font-size: 2.0rem;
+  border: none;
+  border-radius: 25px;
+  background: #D9D9D9;
+}
+
+#app .search-container input::placeholder{
+  font-size: 1.8rem;
+  padding: 0;
+  color: gray;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+main section .weather-card{
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+width: 100%;
+max-width: 817px;
+min-height: 425px;
+border-radius: 20px;
+position: relative;
+background: linear-gradient(135deg, #AD36CB 27%, #333333 69%);
+overflow: hidden;
+padding: 20px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+main section .weather-card .weather-info{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+main section .weather-card .weather-info .weather-suns{
+  margin: 30px 0;
+}
+
+main section .weather-card .weather-info .weather-suns h2{
+  text-align: left;
+  font-size: 3.0rem;
+}
+
+main section .weather-card .weather-suns p{
+  font-size: 2rem;
+  text-align: left;
+}
+
+main section .weather-card .weather-info .weather-temp{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main section .weather-card .weather-info .weather-temp h3{ 
+  font-size: 7.0rem;
+  text-align: center;
+  padding: 30px 0 20px 120px;
+}
+
+main section .weather-footer-container{
+  display: flex;
+  width: 100%;
+  gap: 80px;
+}
+
+main section .weather-footer-item{
+  padding: 0 20px;
+}
+
+:root {
+  --bg-color: #242424;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
